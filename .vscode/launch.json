@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Python: Launch Scrapy Spider",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "scrapy",
+            "cwd": "${fileDirname}",
+            "args": [
+                "crawl",
+                "LivesetSpider"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Newest livesets | Liveset Database
+    </title>
+    <link href="/favicon.ico?1447877604" type="image/x-icon" rel="icon" />
+    <link href="/favicon.ico?1447877604" type="image/x-icon" rel="shortcut icon" />
+    <link rel="dns-prefetch" href="//lsdb.nl/">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic' rel='stylesheet'
+        type='text/css'>
+    <link rel="alternate" type="application/rss+xml" title="Newest livesets RSS" href="/livesets.rss" />
+    <meta content="319658683401" property="fb:app_id">
+    <link rel="image_src" href="https://lsdb.eu/img/fb_like_v5.png" />
+    <meta property="og:image" content="https://lsdb.eu/img/fb_like_v5.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script src="/js/app.min.js?1555611360"></script>
+    <link rel="stylesheet" href="/css/app.min.css?1555611356" />
+</head>
+
+<body>
+    <div class="contain-to-grid sticky">
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="/"><img src="/img/lsdb.png" alt="Liveset Database" width="170" height="25" /></a></h1>
+                    <a href="//lsdb.nl/livesets" id="toggle_lang"><span class="flg flggb"></span></a>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+
+            <section class="top-bar-section">
+                <ul class="right">
+                    <li><a href="/users/login">Login</a></li>
+                </ul>
+
+                <ul class="left">
+                    <li class="has-dropdown">
+                        <a href="/livesets">Livesets</a>
+                        <ul class="dropdown">
+                            <li><a href="/livesets">New</a></li>
+                            <li><a href="/livesets/top">Top</a></li>
+                            <li><a href="/livesets/linkrequests">Link requests</a></li>
+                            <li><a href="/search">Search</a></li>
+                            <li><a href="/livesets/add">Add</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="/forums">Forum</a>
+                        <ul class="dropdown">
+                            <li><a href="/forums">Index</a></li>
+                            <li><a href="/forums/active">Active topics</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-dropdown">
+                        <a href="#">About</a>
+                        <ul class="dropdown">
+                            <li><a href="/users/crew">Crew</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <div class="sub_header row clearfix">
+        <div class="large-3 columns sub_header_search right">
+
+            <form method="get" accept-charset="utf-8" action="/search">
+                <div class="row collapse">
+                    <div class="large-9 small-9 columns">
+                        <div class="input text"><input type="text" name="q"
+                                placeholder="Search for a liveset, artist, event or track..." data-autocomplete="all"
+                                id="q" /></div>
+                    </div>
+                    <div class="large-3 small-3 columns">
+                        <button class="tiny narrow postfix" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="large-9 columns shoutbox">
+
+            <div id="sb">
+                Shoutbox: [30-07]
+                <span class="flg flgunk"></span> <a href="/user/helleye">helleye</a>:
+                <img src="/img/smileys/happy.gif" alt=" ^.^" class="smiley" />
+            </div>
+            <div id="loading_sb">
+                <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                    <div class="rect6"></div>
+                    <div class="rect7"></div>
+                </div>
+            </div>
+            <form method="post" accept-charset="utf-8" id="sb_form" action="/livesets">
+                <div style="display:none;"><input type="hidden" name="_method" value="POST" /><input type="hidden"
+                        name="_csrfToken"
+                        value="bc878f6e81a5efb68544646804e40e883834f1bcc705bd4c3f38ac8dc13187b8f40fe0f1fde9340d5318ae8c80da528c2b82189f6da1bda73524c51332edb029" />
+                </div>
+                <div class="row collapse hide">
+                    <div class="large-7 columns">
+                        <div class="input text"><input type="text" name="msg" placeholder="Message..."
+                                id="shoutboxmessage" /></div>
+                    </div>
+                    <div class="large-2 columns">
+                        <a data-dropdown="smileydropdown4913" aria-controls="smileydropdown4913" aria-expanded="false"
+                            class="button secondary postfix"
+                            onclick="$('#smileydropdown4913').load('/ajax/smilies',{div:'shoutboxmessage'});this.onclick=''">Smileys</a>
+                        <div id="smileydropdown4913" data-dropdown-content class="f-dropdown content" aria-hidden="true"
+                            tabindex="-1">
+                            <span class="fa fa-spin fa-spinner"></span>
+                        </div>
+                    </div>
+                    <div class="large-3 columns">
+                        <div class="submit"><input type="submit" class="button postfix" value="Post" /></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row row_block row_block_header">
+            <div class="large-12 columns">
+                <ul class="button-group radius right">
+                    <li><a href="/livesets.rss" class="button radius bg-rss" target="_blank"><i class="fa fa-rss"></i>
+                            RSS for this page</a></li>
+                </ul>
+                <h1>
+                    Newest livesets </h1>
+            </div>
+        </div>
+
+        <div class="row row_block">
+            <div class="large-6 columns">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="paging">
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="/livesets?page=2">2</a></li>
+                            <li><a href="/livesets?page=3">3</a></li>
+                            <li><a href="/livesets?page=4">4</a></li>
+                            <li><a href="/livesets?page=5">5</a></li>
+                            <li><a href="/livesets?page=6">6</a></li>
+                            <li><a href="/livesets?page=7">7</a></li>
+                            <li class="ellipsis">...</li>
+                            <li><a href="/livesets?page=4598">4598</a></li>
+                            <li><a href="/livesets?page=4599">4599</a></li>
+                            <li><a href="/livesets?page=4600">4600</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="setlist">
+                    <li>
+                        <a href="/set/245032/barber-decibel-outdoor-2023-promo-mix-uptempo-03-08-23">
+                            <time datetime="2023-08-03">03-08-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Barber @ Decibel Outdoor 2023 Promo Mix Uptempo </a>
+                    </li>
+                    <li>
+                        <a href="/set/245031/atmozfears-sound-rush-pres-21-rebirth-festival-2023-mainstage-15-04-23">
+                            <time datetime="2023-04-15">15-04-'23</time>
+                            <span class="gt gt10"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Atmozfears &amp; Sound Rush pres. 2▲1 @ Rebirth Festival 2023 Mainstage </a>
+                    </li>
+                    <li>
+                        <a href="/set/245030/zoanthropiia-passiv-aggressiv-28-04-23">
+                            <time datetime="2023-04-28">28-04-'23</time>
+                            <span class="gt gt21"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Zoanthropiia @ Passiv Aggressiv </a>
+                    </li>
+                    <li>
+                        <a href="/set/245029/balagan-gibcast-037-12-07-23">
+                            <time datetime="2023-07-12">12-07-'23</time>
+                            <span class="gt gt74"></span> <span class="rat">0</span> <i
+                                class="fa fa-dot-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Incomplete tracklist"></i>
+                            Balagan @ GIBCAST 037 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245028/warlock-sns-members-mix-021-28-04-21">
+                            <time datetime="2021-04-28">28-04-'21</time>
+                            <span class="gt gt55"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Warlock @ SnS Members Mix 021 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245027/lus-passiv-aggressiv-03-02-23">
+                            <time datetime="2023-02-03">03-02-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            L&oslash;us @ Passiv Aggressiv </a>
+                    </li>
+                    <li>
+                        <a href="/set/245026/fhckuh-hardcode-codecast-096-03-08-23">
+                            <time datetime="2023-08-03">03-08-'23</time>
+                            <span class="gt gt74"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            FHCKUH @ Hardcode Codecast 096 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245025/colin-bell-the-colosseum-rebirth-promo-mix-11-07-23">
+                            <time datetime="2023-07-11">11-07-'23</time>
+                            <span class="gt gt25"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Colin Bell @ The Colosseum Rebirth Promo Mix </a>
+                    </li>
+                    <li>
+                        <a href="/set/245024/the-marquis-is-dead-brutal-forms-podcast-132-27-07-23">
+                            <time datetime="2023-07-27">27-07-'23</time>
+                            <span class="gt gt77"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            The Marquis Is Dead @ Brutal Forms Podcast 132 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245023/lopas-art143-podcast-231-01-08-23">
+                            <time datetime="2023-08-01">01-08-'23</time>
+                            <span class="gt gt18"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Lopas @ Art.1.43 Podcast 231 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245022/nixtrove-live-2023-soundboard-22-07-23">
+                            <time datetime="2023-07-22">22-07-'23</time>
+                            <span class="gt gt63"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Nixtrove @ Live 2023 Soundboard </a>
+                    </li>
+                    <li>
+                        <a href="/set/245021/keanu-raves-gypntic-podcast-series-xv-05-11-22">
+                            <time datetime="2022-11-05">05-11-'22</time>
+                            <span class="gt gt17"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Keanu Raves @ Gypnōtic&aring; Podcast Series XV </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/set/245020/dev-null-blog-to-the-oldskool-radio-goldseal-records-discography-mix-30-07-23">
+                            <time datetime="2023-07-30">30-07-'23</time>
+                            <span class="gt gt61"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Dev/Null @ Blog to the Oldskool Radio (Goldseal Records Discography Mix) </a>
+                    </li>
+                    <li>
+                        <a href="/set/245019/dj-23-03-23">
+                            <time datetime="2023-03-23">23-03-'23</time>
+                            <span class="gt gt20"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            DJ秋鴻骨 @ 我太ㄊㄥˋ了！ </a>
+                    </li>
+                    <li>
+                        <a href="/set/245018/randuhm-label-made-episode-10-the-third-movement-28-07-23">
+                            <time datetime="2023-07-28">28-07-'23</time>
+                            <span class="gt gt74"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Randuhm @ Label Made Episode 10 (The Third Movement) </a>
+                    </li>
+                    <li>
+                        <a href="/set/245017/kore-label-made-episode-9-partyraiser-recordings-28-07-23">
+                            <time datetime="2023-07-28">28-07-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            K.O.R.E. @ Label Made Episode 9 (Partyraiser Recordings) </a>
+                    </li>
+                    <li>
+                        <a href="/set/245016/randuhm-label-made-episode-17-megarave-22-07-23">
+                            <time datetime="2023-07-22">22-07-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Randuhm @ Label Made Episode 17 (MegaRave) </a>
+                    </li>
+                    <li>
+                        <a href="/set/245015/nger-hmmer-undermind-podcast-7-28-07-23">
+                            <time datetime="2023-07-28">28-07-'23</time>
+                            <span class="gt gt18"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Ānger Hāmmer @ Undermind Podcast #7 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245014/stefan-zmk-prspct-outdoor-rave-afterparty-29-07-23">
+                            <time datetime="2023-07-29">29-07-'23</time>
+                            <span class="gt gt33"></span> <span class="rat">+1</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Stefan ZMK @ PRSPCT Outdoor Rave Afterparty </a>
+                    </li>
+                    <li>
+                        <a href="/set/245013/eli-brown-verknipt-festival-2023-11-06-23">
+                            <time datetime="2023-06-11">11-06-'23</time>
+                            <span class="gt gt17"></span> <span class="rat">0</span> <i
+                                class="fa fa-dot-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Incomplete tracklist"></i>
+                            Eli Brown @ Verknipt Festival 2023 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245012/the-sickest-squad-ground-zero-2023-warmup-mix-03-08-23">
+                            <time datetime="2023-08-03">03-08-'23</time>
+                            <span class="gt gt35"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            The Sickest Squad @ Ground Zero 2023 Warmup Mix </a>
+                    </li>
+                    <li>
+                        <a href="/set/245011/mr-ivex-harmony-of-hardcore-2023-frenchcore-maniacs-27-05-23">
+                            <time datetime="2023-05-27">27-05-'23</time>
+                            <span class="gt gt35"></span> <span class="rat">0</span> <i
+                                class="fa fa-dot-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Incomplete tracklist"></i>
+                            Mr. Ivex @ Harmony of Hardcore 2023 Frenchcore Maniacs </a>
+                    </li>
+                    <li>
+                        <a href="/set/245010/rayzen-harmony-of-hardcore-2023-pres-afterlife-rawtempo-mix-27-05-23">
+                            <time datetime="2023-05-27">27-05-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Rayzen @ Harmony of Hardcore 2023 pres. Afterlife: Rawtempo Mix </a>
+                    </li>
+                    <li>
+                        <a href="/set/245009/the-viper-harmony-of-hardcore-2023-album-showcase-mainstage-27-05-23">
+                            <time datetime="2023-05-27">27-05-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-dot-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Incomplete tracklist"></i>
+                            The Viper @ Harmony of Hardcore 2023 Album Showcase | Mainstage </a>
+                    </li>
+                    <li>
+                        <a href="/set/245008/yunclas-raven-sigh-guest-mix-series-ep118-23-12-21">
+                            <time datetime="2021-12-23">23-12-'21</time>
+                            <span class="gt gt17"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Yunclas @ Raven Sigh Guest Mix Series EP118 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245007/thrae-rare-podcast-021-20-07-22">
+                            <time datetime="2022-07-20">20-07-'22</time>
+                            <span class="gt gt18"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Thrae @ RA:RE. Pod:cast. 021 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245006/stroke-she-is-unforgettable-01-07-23">
+                            <time datetime="2023-07-01">01-07-'23</time>
+                            <span class="gt gt25"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Stroke @ She Is Unforgettable </a>
+                    </li>
+                    <li>
+                        <a href="/set/245005/glaskin-spnd20-mixtape-15-07-23">
+                            <time datetime="2023-07-15">15-07-'23</time>
+                            <span class="gt gt17"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Glaskin @ SPND20 Mixtape </a>
+                    </li>
+                    <li>
+                        <a href="/set/245004/krafty-exe-exe-project-m060-06-06-23">
+                            <time datetime="2023-06-06">06-06-'23</time>
+                            <span class="gt gt44"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Krafty_EXE @ EXE Project M060 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245003/dj-rave-fun-taiwan-mix-104-catch-me-if-you-yam-09-06-23">
+                            <time datetime="2023-06-09">09-06-'23</time>
+                            <span class="gt gt13"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            DJ泛薯ㄍㄧㄣ @ Rave Fun Taiwan Mix 104 (Catch Me If You Yam) </a>
+                    </li>
+                    <li>
+                        <a href="/set/245002/toxic-dna-true-solid-techno-005-05-06-23">
+                            <time datetime="2023-06-05">05-06-'23</time>
+                            <span class="gt gt18"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Toxic D.N.A @ True &amp; Solid Techno 005 </a>
+                    </li>
+                    <li>
+                        <a href="/set/245001/caulfield-alien-t-tribute-mix-02-08-23">
+                            <time datetime="2023-08-02">02-08-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Caulfield @ Alien T Tribute Mix </a>
+                    </li>
+                    <li>
+                        <a href="/set/245000/reeko-samurai-music-podcast-58-08-06-23">
+                            <time datetime="2023-06-08">08-06-'23</time>
+                            <span class="gt gt63"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Reeko @ Samurai Music Podcast 58 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244999/caracel-goh-podcast-31-19-02-23">
+                            <time datetime="2023-02-19">19-02-'23</time>
+                            <span class="gt gt10"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            CaraCel @ GOH Podcast #31 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244998/rezzx-goh-podcast-32-05-03-23">
+                            <time datetime="2023-03-05">05-03-'23</time>
+                            <span class="gt gt10"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            RezzX @ GOH Podcast #32 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244997/syrena-goh-podcast-33-16-04-23">
+                            <time datetime="2023-04-16">16-04-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Syrena @ GOH Podcast #33 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244996/lara-goh-podcast-35-11-06-23">
+                            <time datetime="2023-06-11">11-06-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Lara @ GOH Podcast #35 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244995/hetzkinen-goh-podcast-36-05-07-23">
+                            <time datetime="2023-07-05">05-07-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-dot-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Incomplete tracklist"></i>
+                            Hetzkinen @ GOH Podcast #36 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244994/scotty-pres-mr-scott-mijn-definitie-van-gabber-18-03-23">
+                            <time datetime="2023-03-18">18-03-'23</time>
+                            <span class="gt gt25"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Scotty pres. Mr Scott @ Mijn Definitie Van Gabber </a>
+                    </li>
+                    <li>
+                        <a href="/set/244993/the-slaughter-distortion-podcast-lxxiii-27-06-23">
+                            <time datetime="2023-06-27">27-06-'23</time>
+                            <span class="gt gt74"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            The Slaughter @ Distortion Podcast LXXIII </a>
+                    </li>
+                    <li>
+                        <a href="/set/244992/noxious-nox-2-the-core-podcast-45-milllennium-edition-02-08-23">
+                            <time datetime="2023-08-02">02-08-'23</time>
+                            <span class="gt gt12"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Noxious @ Nox 2 The Core Podcast 45 Milllennium Edition </a>
+                    </li>
+                    <li>
+                        <a href="/set/244991/d-block-s-te-fan-intents-festival-2023-mainstage-02-06-23">
+                            <time datetime="2023-06-02">02-06-'23</time>
+                            <span class="gt gt10"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            D-Block &amp; S-te-Fan @ Intents Festival 2023 Mainstage </a>
+                    </li>
+                    <li>
+                        <a href="/set/244990/da-machinery-hard-gabber-mix-6-31-07-23">
+                            <time datetime="2023-07-31">31-07-'23</time>
+                            <span class="gt gt25"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Da Machinery @ Hard Gabber Mix #6 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244989/shlmo-verknipt-festival-2023-11-06-23">
+                            <time datetime="2023-06-11">11-06-'23</time>
+                            <span class="gt gt18"></span> <span class="rat">+2</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Shl&oslash;mo @ Verknipt Festival 2023 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244988/barty-fire-real-hardstyle-radio-286-01-08-23">
+                            <time datetime="2023-08-01">01-08-'23</time>
+                            <span class="gt gt10"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Barty Fire @ Real Hardstyle Radio #286 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244987/scheme-boy-balter-festival-2023-27-05-23">
+                            <time datetime="2023-05-27">27-05-'23</time>
+                            <span class="gt gt31"></span> <span class="rat">+1</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Scheme Boy @ Balter Festival 2023 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244986/unpalatable-unaffiliated-777-20-05-23">
+                            <time datetime="2023-05-20">20-05-'23</time>
+                            <span class="gt gt13"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            Unpalatable @ Unaffiliated 777 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244985/sitos-unaffiliated-777-20-05-23">
+                            <time datetime="2023-05-20">20-05-'23</time>
+                            <span class="gt gt34"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle-o xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="No tracklist"></i>
+                            sitos @ Unaffiliated 777 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244984/aphextwinsucks-unaffiliated-777-20-05-23">
+                            <time datetime="2023-05-20">20-05-'23</time>
+                            <span class="gt gt13"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            Aphextwinsucks @ Unaffiliated 777 </a>
+                    </li>
+                    <li>
+                        <a href="/set/244983/wt-snacks-dj-hypegirl-pres-snack-attack-unaffiliated-777-20-05-23">
+                            <time datetime="2023-05-20">20-05-'23</time>
+                            <span class="gt gt13"></span> <span class="rat">0</span> <i
+                                class="fa fa-circle xfa-inline txt-grey" data-tooltip aria-haspopup="true"
+                                title="Full tracklist"></i>
+                            W​.​T. Snacks &amp; DJ Hype✩Girl pres. Snack Attack @ Unaffiliated 777 </a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="paging">
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="/livesets?page=2">2</a></li>
+                            <li><a href="/livesets?page=3">3</a></li>
+                            <li><a href="/livesets?page=4">4</a></li>
+                            <li><a href="/livesets?page=5">5</a></li>
+                            <li><a href="/livesets?page=6">6</a></li>
+                            <li><a href="/livesets?page=7">7</a></li>
+                            <li class="ellipsis">...</li>
+                            <li><a href="/livesets?page=4598">4598</a></li>
+                            <li><a href="/livesets?page=4599">4599</a></li>
+                            <li><a href="/livesets?page=4600">4600</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="large-6 columns">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="large-3 columns">
+                <h3>Info</h3>
+                <ul>
+                    <li><a href="/pages/terms">Terms and Conditions</a></li>
+                    <li><a href="/pages/privacy">Privacy Policy</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="large-3 columns">
+                <h3>RSS</h3>
+                <a href="/livesets.rss" target="_blank"><i class="fa fa-rss"></i> Newest livesets RSS</a>
+            </div>
+            <div class="large-3 columns">
+                <h3>Partners</h3>
+                <ul>
+                    <li><a target="_blank" href="http://www.earlyhardstyle.nl/">Early Hardstyle.nl</a></li>
+                    <li><a target="_blank" href="http://www.filmforce.nl/">FilmForce</a></li>
+                    <li><a target="_blank" href="http://www.gabber.fm/">Gabber.fm</a></li>
+                    <li><a target="_blank" href="http://www.happyhardstyle.nl/">Happy Hardstyle</a></li>
+                    <li><a target="_blank" href="https://www.harderlife.com/">Harder|Life</a></li>
+                    <li><a target="_blank" href="http://www.harderstylez.com/">HarderStylez</a></li>
+                    <li><a target="_blank" href="http://www.hardstation.fm/">Hardstation.fm</a></li>
+                    <li><a target="_blank" href="http://www.hardtraxx.nl/">Hardtraxx</a></li>
+                    <li><a target="_blank" href="http://www.livesetsonline.com/">Livesets Online</a></li>
+                </ul>
+            </div>
+            <div class="large-3 columns">
+                <h3>Social</h3>
+                <a href="https://www.facebook.com/www.lsdb.nl" target="_blank"><i class="fa fa-facebook-square"></i>
+                    Facebook</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2007-2023 Liveset Database | <a href="/changelogs">Changelog</a> </div>
+    </footer>
+
+    <div id="page_up"><i class="fa fa-chevron-up"></i></div>
+
+    <div id="loading_fs">
+        <div class="spinner">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+            <div class="rect6"></div>
+            <div class="rect7"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).foundation();
+    </script>
+</body>
+
+</html>

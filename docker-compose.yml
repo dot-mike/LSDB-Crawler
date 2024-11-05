@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    container_name: lsdb-crawler-db
+    image: mongo:latest
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: password
+    volumes:
+      - db:/data/db
+    ports:
+      - 27017:27017
+    expose:
+      - 27017
+volumes:
+  db:
